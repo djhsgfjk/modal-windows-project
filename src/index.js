@@ -3,9 +3,9 @@ import Model from './modules/model';
 import View from './modules/view';
 import Controller from './modules/controller';
 
-const modals = [
+const textModals = [
     {
-        type: 'coffee',
+        type: 'text',
         title: 'Coffee',
         text: 'Coffee is a drink prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic, '
             + 'coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest '
@@ -18,7 +18,7 @@ const modals = [
         buttonName: 'coffee',
     },
     {
-        type: 'tea',
+        type: 'text',
         title: 'Tea',
         text: 'Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves '
             + 'of Camellia sinensis, an evergreen shrub native to East Asia which probably originated in the '
@@ -30,7 +30,7 @@ const modals = [
         buttonName: 'tea',
     },
     {
-        type: 'milk',
+        type: 'text',
         title: 'Milk',
         text: 'Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of '
             + 'nutrition for young mammals (including breastfed human infants) before they are able to digest solid '
@@ -40,5 +40,16 @@ const modals = [
         buttonName: 'milk',
     },
 ];
+
+const modals = [
+    {
+        type: 'randomCoffeeImage',
+        title: 'Enjoy coffee!',
+        url: 'https://coffee.alexflipnote.dev/random.json',
+        imageUrl: null,
+        error: "Haven't load any image yet",
+        buttonName: 'Random coffee picture',
+    },
+]
 
 const app = new Controller(new Model(modals), new View());

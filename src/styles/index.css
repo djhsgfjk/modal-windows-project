@@ -6,6 +6,7 @@
     color: grey;
 }
 
+
 .btn {
     font-family: Arial, sans-serif;
     background-color: DodgerBlue;
@@ -16,6 +17,11 @@
     cursor: pointer;
     border-radius: 2px;
     margin-right: 8px;
+}
+
+.btn[disabled], .btn[disabled]:hover  {
+    background-color: gainsboro;
+    cursor: default;
 }
 
 .btn:hover {
@@ -55,15 +61,22 @@
     margin-top: 8px;
 }
 
-.modal__btn--next, .modal__btn--prev {
-    min-width: 100px;
-}
-
-[class^='modal__btn-container'] {
+.modal__btn-container {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.modal__btn-container--content-manage {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+[class^='modal__btn--'] {
+    margin-left: 12px;
 }
 
 .modal {
@@ -94,17 +107,38 @@
     padding: 24px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    width: 60%;
-    height: 50%;
-    overflow: auto;
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
 }
 
-.modal__text {
-    overflow: auto;
+.modal__main {
+    margin-bottom: 12px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    align-items: flex-start;
+}
+
+.modal__text--error {
+    color: red;
+}
+
+.modal__image-container {
     height: 100%;
-    margin: 0 24px 24px 24px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.modal__image {
+    height: 80%;
 }
 
 .modal__title {
-    margin: 24px 24px 12px 24px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
