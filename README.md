@@ -2,8 +2,9 @@
 
 ### Description
 
-At the moment, the application represents a page with a button which, when clicked, opens a modal window that displays a random image with coffee. The image is requested from an open API https://coffee.alexflipnote.dev/
-Application architecture is MVC.
+At the moment, the application represents a page with a button which, when clicked, opens a modal window that displays a random image with coffee. The image is requested from an [open third party API](https://coffee.alexflipnote.dev/)
+
+Application architecture - MVC. CSS class naming methodology - [BEM](https://getbem.com/).
 
 ### Stack
 
