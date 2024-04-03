@@ -1,21 +1,22 @@
 ## Native JS. Widgets
 
-### Описание
+### Description
 
-На данный момент приложение представляет из себя страницу с кнопкой, при нажатии на которую открываются модальное окно, в которое выводится рандомное изображение с кофе. Изображение запрашивается с открытого api https://coffee.alexflipnote.dev/
-Архитектура приложения - MVC.
+At the moment, the application represents a page with a button which, when clicked, opens a modal window that displays a random image with coffee. The image is requested from an open API https://coffee.alexflipnote.dev/
+Application architecture is MVC.
 
-### Технологии
+### Stack
 
 - JS
 - HTML
 - CSS
 - Webpack
 
-### Как запустить приложение
+### Scripts
 
-`npm run build` - проект соберется в папке `dist`, в которой нужно отрыть `index.html` файл
+`npm run watch` - development mode; the project will be built in the `dist` folder, where you need to open the `index.html` file
+`npm run build` - product mode; the project will be built in the `dist` folder, where you need to open the `index.html` file
 
-### Планы на будущее
+### Future plans
 
-Добавить ещё два модальных окна, которые будут запрашивать данные с других api.
+Add two more modal windows that will request data from other APIs.
